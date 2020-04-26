@@ -1,7 +1,7 @@
 const clickBtn = ()=>{
     let textarea = document.getElementById('textarea').value;
     // 何に変換したらいいかわからない↓
-    result = textarea.replace(/\n/g, '');
+    result = textarea.replace(/\n/g, '　\n');
     console.log(result);
     document.getElementById('textarea').value = result;
     document.getElementById('textarea').select();
