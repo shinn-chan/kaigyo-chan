@@ -14,9 +14,11 @@
     <div class="main">
         <p>＼ここに文字入力してね／</p>
         <form>
-            <textarea id="textarea"></textarea>
+            <textarea id="textarea"　onInput="count()"></textarea>
+            <p class="count"></p>
+            <input class="submitButton" type="button" value="テキストをコピーする" onClick="submitBtn()">
+            <input class="deleteButton" type="button" value="リセット" onClick="deleteBtn()">
             <script src="./js/app.js"></script>
-            <input class="submitBotton" type="button" value="テキストをコピーする" onClick="clickBtn()">
         </form>
     <div>
 </body>

@@ -1,3 +1,14 @@
+@mixin Btn($bgColor) {
+    color: #fff;
+    width: 75%;
+    height: 40px;
+    font-size: 20px;
+    background-color: $bgColor;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 body{
     font-family: "sanserif";
     max-width: 1000px;
@@ -21,18 +32,18 @@ body{
         text-align: center;
         textarea{
             height: 100vw;
-            width: 80%;
+            width: 75%;
             font-size: 16px;
         }
-        .submitBotton{
-                color: #fff;
-                width: 70%;
-                height: 40px;
-                font-size: 20px;
-                background-color: #62b0f8;
-                border: none;
-                border-radius: 10px;
-                margin-top: 30px;
+        .count{
+            margin: 0 0 0 0;
+        }
+        .submitButton{
+            @include Btn(#62b0f8);
+        }
+
+        .deleteButton{
+            @include Btn(rgb(245, 80, 80));
         }
     }
 }
