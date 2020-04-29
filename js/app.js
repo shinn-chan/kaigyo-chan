@@ -17,7 +17,7 @@ const submitBtn = ()=>{
 
     let comfirmation = confirm('コピー完了！インスタのテキスト欄にそのまま貼り付けてね！');
     if (comfirmation){
-        window.open('instagram://', '_blank');
+        window.open('instagram://');
     }
 }
 
