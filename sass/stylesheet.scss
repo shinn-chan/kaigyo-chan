@@ -1,49 +1,54 @@
-@mixin Btn($bgColor) {
-    color: #fff;
+@mixin Btn($color,$bgColor) {
+    color: $color;
     width: 75%;
     height: 40px;
     font-size: 20px;
     background-color: $bgColor;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-top: 20px;
 }
 
 body{
-    font-family: "sanserif";
+    font-family: "Century Gothic Std", Arial, sans-serif;
     max-width: 1000px;
-    background-color: rgb(231, 229, 229);
+    background-color:#e7e5e5;
     margin: 0 0;
     header{
+        display: table;
         width: 100%;
-        height: 20vw;
+        height: 17vw;
         text-align: center;
-        background-color: rgba(143, 143, 143, 0.801);
+        background-color: #ffffff;
         h1{
+            display: table-cell;
+            vertical-align: middle;
             margin: 0 0;
-            padding-top: 6vw;
             font-size: 1.5em;
-            color: white;
+            color:rgb(0, 0, 0);
         }
     }
     .main{
-        margin-top: 9vw;
+        margin-top: 8vw;
         margin-bottom: 9vw;
         text-align: center;
         textarea{
             height: 100vw;
             width: 75%;
             font-size: 16px;
+            border: solid 1px #757575;
+            border-radius: 20px;
         }
         .count{
             margin: 0 0 0 0;
         }
         .submitButton{
-            @include Btn(#62b0f8);
+            @include Btn(white,black);
         }
 
         .deleteButton{
-            @include Btn(rgb(245, 80, 80));
+            @include Btn(black, white);
+            border: solid 0.0625rem black;
         }
     }
 }

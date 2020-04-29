@@ -12,11 +12,10 @@
         <h1>改行ちゃん</h1>
     </header>
     <div class="main">
-        <p>＼ここに文字入力してね／</p>
+        <p id="counter" class="count">文字数:0</p>
         <form>
             <textarea id="textarea"　onChange="count()"></textarea>
-            <p id="counter" class="count"></p>
-            <input class="submitButton" type="button" value="テキストをコピーする" onClick="submitBtn()">
+            <input class="submitButton" type="button" value="変換＆コピー" onClick="submitBtn()">
             <input class="deleteButton" type="button" value="リセット" onClick="deleteBtn()">
             <script src="./js/app.js"></script>
         </form>
