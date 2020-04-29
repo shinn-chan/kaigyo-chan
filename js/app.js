@@ -1,7 +1,9 @@
 const count = () =>{
     let stringlength = document.getElementById('textarea').value.length;
-    document.getElementsByClassName('count').innerHTML.put(`文字数:${stringlength}`);
+    document.getElementById('counter').innerHTML = `文字数:${stringlength}`;
 }
+
+document.getElementById('textarea').addEventListener('input', count);
 
 const submitBtn = ()=>{
     // 変換機能
@@ -12,7 +14,11 @@ const submitBtn = ()=>{
     // コピー機能
     document.getElementById('textarea').select();
     document.execCommand("copy");
-    alert('コピー完了！インスタのテキスト欄にそのまま貼り付けてね！');
+
+    let comfirmation = confirm('コピー完了！インスタのテキスト欄にそのまま貼り付けてね！');
+    if (comfirmation){
+        window.open('instagram://', '_blank');
+    }
 }
 
 const deleteBtn = ()=>{
