@@ -12,7 +12,7 @@ function setup() {
   let div = 15.0;
   let rectWidth = width / div;
     for (let i = 0; i < div; i++) {
-    fill(random(360), 50, 100);
+    fill(random(360), 30, 100);
     rect(i * rectWidth, 0, rectWidth,height);
   }
 }
