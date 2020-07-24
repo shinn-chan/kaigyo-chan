@@ -1,0 +1,80 @@
+@import "./footer";
+
+@mixin Btn($color,$bgColor) {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: $color;
+    //height: 40px
+    background-color: $bgColor;
+    border: none;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+html{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+canvas{
+    margin: 0 0;
+    padding: 0 0;
+    height: 100%;
+}
+body{
+    font-family: "Century Gothic Std", Arial, sans-serif;
+    max-width: 1000px;
+    background-color:#e7e5e5;
+    margin: 0 0;
+    header{
+        display: table;
+        width: 100%;
+        height: 17vw;
+        text-align: center;
+        //box-shadow: 0px 1px 2px 0px;
+        background-color:rgba(255, 255, 255, 0.9);
+        h1{
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0 0;
+            font-size: 1.5em;
+            color: #ef7da2;
+        }
+    }
+    .main{
+        padding-top: 8vw;
+        text-align: center;
+        min-height: 100vh;
+        #counter{
+            color: rgb(59, 59, 59);
+        }
+        textarea{
+            padding: 15px;
+            height: 100vw;
+            width: 75%;
+            font-size: 16px;
+            border: solid 1px #dfdfdf;
+            border-radius: 30px;
+        }
+        .count{
+            margin: 0 0 0 0;
+        }
+        .btn-container{
+            width: 100%;
+            text-align: center;
+            .submitButton{
+                @include Btn(white,#ea5485);
+                width: 75%;
+                font-size: 20px;
+                padding:10px;
+            }
+            .deleteButton{
+                @include Btn(#ea5485, rgb(255, 255, 255));
+                width: 20%;
+                font-size: 10px;
+                padding:5px;
+            }
+        }
+    }
+}

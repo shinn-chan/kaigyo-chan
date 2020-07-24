@@ -1,0 +1,12 @@
+{
+    "name": "改行ちゃん",
+    "short_name": "改行ちゃん",
+    "description": "webブラウザで快適に動く改行用エディターです。",
+    "lang": "ja-JP",
+    "theme_color": "#ef7da2",
+    "background_color": "#ef7da2",
+    "display": "fullscreen",
+    "Scope": "/",
+    "start_url": "./?utm_source=homescreen",
+    "splash_pages": null
+  }

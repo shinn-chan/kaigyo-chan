@@ -1,0 +1,41 @@
+.footer {
+    width: auto;
+    padding:5vw;
+    background-color:rgba(79, 71, 84, 0.97);
+    min-height: 10vw;
+    color:#fff;
+    text-align: center;
+    margin-top: 5vw;
+    .footer-menu{
+        .mailto{
+            display: inline-block;
+            padding: 0 2vw;
+            font-size: 3vw;
+            img{
+                height: 3vw;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .privacy{
+            display: inline-block;
+            padding: 0 2vw;
+            font-size: 3vw;
+            img{
+                height: 3vw;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    .copyright{
+        padding-top: 5vw;
+        color:rgb(126, 126, 126);
+        font-size: 2vw;
+        vertical-align: bottom;
+    }
+}
