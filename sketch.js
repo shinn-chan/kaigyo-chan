@@ -5,17 +5,14 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index','-1');//canvasを後ろに移動する。
   canvas.style('position','fixed');//canvasの固定
+
   colorMode(HSB, 360, 100, 100, 100);
   frameRate(3);
   noStroke();
-  let div = 30.0;
+  let div = 15.0;
   let rectWidth = width / div;
-  for (let i = 0; i < div; i++) {
-  fill(random(360), 50, 100);
-  rect(i * rectWidth, 0, rectWidth,height);
- }
-}
-
-function draw(){
-
+    for (let i = 0; i < div; i++) {
+    fill(random(360), 50, 100);
+    rect(i * rectWidth, 0, rectWidth,height);
+  }
 }
